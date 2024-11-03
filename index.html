@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Laura Pontara">
+    <title>Conversor de Moedas</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+    <!-- Contêiner principal da aplicação -->
+    <div class="principal">
+        <div class="app-details">
+            <!-- Imagem do gif de dinheiro -->
+            <img class="money" src="assets/images/money-cash.gif" width="48%" alt="gif">
+            <!-- Título -->
+            <h1 class="app-title">Conversor de Moedas</h1>
+        </div>
+
+        <!-- Seção para inserir o valor a ser convertido -->
+        <h2>Valor:</h2>
+        <!-- entrada de valores numéricos-->
+        <input type="number" id="valor" value="0">
+
+        <!-- Seção dos seletores de moeda de origem e destino -->
+        <div class="filtro">
+
+            <!-- Seletor de moeda de origem -->
+            <select id="moedaorigem">
+                <option value="BRL">Real</option>
+                <option value="USD">Dólar</option>
+                <option value="EUR">Euro</option>
+                <option value="GBP">Libra Esterlina</option>
+                <option value="CLP">Peso Chileno</option>
+            </select>
+
+            <img src="assets/images/direita.png" alt="" class="seta" width="20px">
+
+            <!-- Seletor de moeda de destino -->
+            <select id="moedadestino">
+                <option value="USD">Dólar</option>
+                <option value="BRL">Real</option>
+                <option value="EUR">Euro</option>
+                <option value="GBP">Libra Esterlina</option>
+                <option value="CLP">Peso Chileno</option>
+            </select>
+        </div>
+
+        <!-- Botão de conversão -->
+        <button id="botao-converter" type="button">Converter</button>
+
+        <!-- resultado da conversão -->
+        <p id="resultado"></p>
+
+        <!-- Para exibir a taxa de câmbio -->
+        <div id="taxa"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
